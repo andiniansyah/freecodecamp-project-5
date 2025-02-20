@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+width: 100vw;
+position: fixed;
+padding: 0 10vw;
+background-color: transparent;
+z-index: 3;
+
+}
+
+header h4 {
+    top: 0.5em;
+    left: 1.5em;
+    font-size: 2em;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul{
+    display: flex;
+    height: 5em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+    width: 800px;
+    background-color: #e39774;
+    border-radius: 0 0 20px 20px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    padding: 0.4em;
+    
+    
+}
+
+#navbar a:hover{
+    background-color: #326273;
+    color: #fafaff;
+}
+
+#navbar li:first-of-type a:hover {
+    border-bottom-left-radius: 20px;
+}
+
+#navbar li:last-of-type a:hover {
+    border-bottom-right-radius: 20px;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3.5em;
+    background-color: #326273;
+    color: #fafaff;
+}
+
+#welcome-section *{
+    margin: 0.2em 0;
+    font-family: 'Segoe UI';
+}
+
+#welcome-section h1{
+    font-size: 5em;
+}
+
+#welcome-section p{
+    font-size: 2em;
+    text-align: center;
+}
+
+#welcome-section a {
+    padding: 0.5em 0.5em 0.7em 0.5em;
+    width: 15%;
+    font-size: 1.5em;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #e39774;
+    text-decoration: none;
+    color: black;
+    margin-top: 2em;
+    transition: width 0.2s;
+    
+}
+
+#welcome-section a:hover {
+    background-color: #fafaff;
+    width: 10%;
+}
+
+/* PROFILE */
+
+
+#profile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 100vh;
+    width: 100%;
+    background-color: #fafaff;
+    align-items: center;
+    padding-top: 5em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.personal-img {
+    height: 100%;
+    flex: 2;
+}
+
+#din-photo {
+    width: 84.5%;
+    height: fit-content;
+    display: flex;
+    margin: auto 0;
+
+}
+
+.personal-info {
+    width: 100%;
+    height: 80%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 25px;
+    padding: 5% 0;
+}
+
+.introduction h2 {
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.skills h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.my-skills img {
+    width: 100px;
+}
+
+/* MY PROJECTS */
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #507dbc;
+    align-items: center;
+    padding-top: 5em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#projects h1 {
+    font-size: 3em;
+}
+
+.my-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    width: 80%;
+    gap: 50px;
+}
+
+.project-tile {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile a {
+    width: 100%;
+    background-color: #326273;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    color: #fafaff;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: width 0.5s;
+}
+
+.project-tile a:hover {
+    color: black;
+    background-color: #e39774;
+    width: 120%;
+}
+
+.project-tile img{
+    width: 100%;
+    height: fit-content;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+
+/* CONTACT ME */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    row-gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #4c956c;
+    align-items: center;
+    padding-top: 5em; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caption {
+    font-size: 3em;
+    text-align: center;
+}
+
+.caption p {
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+
+.my-contact {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.sosmed a {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: padding-top 0.5s;
+}
+
+.sosmed a:hover {
+    padding-top: 20px;
+}
+
+.sosmed p {
+    margin-left: 0.3em;
+}
+
+.sosmed img {
+    width: 1.5em;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+#footer {
+    width: 100vw;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma;
+    font-style: italic;
+    background-color: #e39774;
+}
+
+/* MEDAI QUERY */
+
+@media (max-width: 1025px) {
+    header h4 {
+        display: none;
+    }
+
+    #welcome-section a{
+        font-size: 2em;
+        width: 30%;
+        border-radius: 50px;
+    }
+    /* PROFILE */
+
+    #profile {
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    
+    .personal-img {
+        flex: 0.5;
+        display: flex;
+        align-items: end;
+    }
+    
+    #din-photo {
+        width: 20em;
+        height: 20em;
+        max-width: 500px;
+        max-height: 500px;
+        z-index: 2;
+        border-radius: 100% 100%;
+        object-fit: cover;
+        background-color: #4c956c;
+        margin: 0;
+        margin-bottom: 10%;
+    
+    }
+    
+    .personal-info {
+        flex: 1;
+        justify-content: flex-start;
+    }
+    
+    .introduction {
+        font-size: clamp(1.5em, 1vw, 4em);
+    }
+    
+    .introduction h2 {
+        font-size: clamp(1.5em, 3vw, 3em);
+    }
+    
+    
+    .skills h3 {
+        margin-bottom: 10%;
+        font-size: clamp(1.5em, 3vw, 4em);
+    }
+    
+    .my-skills img {
+        width:7vh;
+        max-width: 150px;
+    }
+
+
+    /* PROJECT */
+    #projects {
+        justify-content: center;
+        gap: 5%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        height: 5vh;
+        font-size: clamp(1.5em, 3vw, 4em);
+    }
+    
+}
+
+@media (min-height: 800px) {
+    .my-projects {
+        flex-direction: row;
+    }
+
+    .project-tile {
+        width: 45%;
+        max-width: 17em;
+    }
+
+
+}
